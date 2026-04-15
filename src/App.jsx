@@ -1,18 +1,7 @@
 import { CORE_CONCEPTS } from './data';
-import Header from './components/Header';
-import CoreConcept from './components/CoreConcept';
-
-/*function UserData() {
-  const user = {first:"Thalia", last:"Cheong", age:"21"};
-
-  return (
-    <div>
-      <h2> Name:{user.last}, {user.first}</h2>
-      <h3>Age: {user.age}</h3>
-    </div>
-  );
-
-}*/
+import Header from './components/Header/Header';
+import CoreConcept from './components/CoreConcept/CoreConcept';
+import TabButton from './components/TabButton';
 
 
 function App() {
@@ -46,6 +35,17 @@ function App() {
           }
           
         </ul>
+        </section>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+           <TabButton >Components</TabButton>
+           <TabButton >JSX</TabButton>
+           <TabButton >State</TabButton>
+           <TabButton >Props</TabButton>
+
+          </menu>
+
         </section>
       </main>
      
